@@ -4,6 +4,8 @@ const contact = () => {
   const footerStyle = {
     padding: '20px 0',
     backgroundColor: 'white',
+    zIndex: '100',
+    position : 'relative',
   };
 
   const headingStyle = {
@@ -41,34 +43,34 @@ const contact = () => {
   };
   return (
     <footer style={footerStyle}>
-      <div className="text-center z-10">
+      <div className="text-center">
         <h3 style={headingStyle}>CONTACT US</h3>
-        <div style={socialIconsContainer} className="social-icons z-10">
-          <div className="facebook z-10"><a href="#"><i style={socialIconStyle} className="fab fa-facebook-f z-10"></i></a></div>
-          <div className="linkedin z-10"><a href="#"><i style={socialIconStyle} className="fab fa-linkedin-in z-10"></i></a></div>
-          <div className="twitter z-10"><a href="#"><i style={socialIconStyle} className="fab fa-twitter z-10"></i></a></div>
-          <div className="instagram z-10"><a href="#"><i style={socialIconStyle} className="fab fa-instagram z-10"></i></a></div>
+        <div style={socialIconsContainer} className="social-icons">
+          <div className="facebook"><a href="#"><i style={socialIconStyle} className="fab fa-facebook-f"></i></a></div>
+          <div className="linkedin"><a href="#"><i style={socialIconStyle} className="fab fa-linkedin-in"></i></a></div>
+          <div className="twitter"><a href="#"><i style={socialIconStyle} className="fab fa-twitter"></i></a></div>
+          <div className="instagram"><a href="#"><i style={socialIconStyle} className="fab fa-instagram"></i></a></div>
         </div>
       </div>
-      <div className="text-center z-10">
-        <form action="" style={formStyle} className="d-flex justify-content-center z-10">
-          <input type="email" className="form-control z-10" style={{ width: '200px' }} placeholder="Email address" />
-          <div className="subscribe z-10">
-            <button type="submit" className="btn btn-primary ml-2 z-10">SUBSCRIBE</button>
+      <div className="text-center">
+        <form action="" style={formStyle} className="d-flex justify-content-center">
+          <input type="email" className="form-control" style={{ width: '200px' }} placeholder="Email address" />
+          <div className="subscribe">
+            <button type="submit" className="btn btn-primary ml-2">SUBSCRIBE</button>
           </div>
         </form>
       </div>
-      <div className="text-center z-10">
-        <div className="row z-10">
-          <div className="col-md-6 z-10">
-            <ul style={listStyle} className="list-unstyled z-10">
+      <div className="text-center">
+        <div className="row">
+          <div className="col-md-6">
+            <ul style={listStyle} className="list-unstyled">
               <li style={listItemStyle}>Name</li>
               <li style={listItemStyle}>Email</li>
               <li style={listItemStyle}>Mob</li>
             </ul>
           </div>
-          <div className="col-md-6 z-10">
-            <ul style={listStyle} className="list-unstyled z-10">
+          <div className="col-md-6">
+            <ul style={listStyle} className="list-unstyled">
               <li style={listItemStyle}>Name</li>
               <li style={listItemStyle}>Email</li>
               <li style={listItemStyle}>Mob</li>
@@ -76,7 +78,7 @@ const contact = () => {
           </div>
         </div>
       </div>
-      <div className="text-center z-10">
+      <div className="text-center">
         <p style={copyrightStyle}>Made by AstroCET. All rights reserved.</p>
       </div>
     </footer>
